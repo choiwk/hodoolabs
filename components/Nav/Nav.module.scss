@@ -1,0 +1,37 @@
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  .nav_container {
+    width: 100%;
+    display: flex;
+    max-width: 1140px;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    .gnb_left {
+      display: flex;
+    }
+    .gnb_right {
+      .navList {
+        display: flex;
+        align-items: center;
+        .navListItem {
+          margin-right: 50px;
+          a {
+            font-size: 17px;
+            color: #fff;
+          }
+        }
+        strong {
+          margin-right: 50px;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
