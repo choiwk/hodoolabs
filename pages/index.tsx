@@ -1,10 +1,14 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
+
+import LanLive from '../components/LanLive';
 
 const Home: NextPage = () => {
-  return <div>안녕</div>;
+  return (
+    <div>
+      안녕<LanLive></LanLive>
+    </div>
+  );
 };
 
 export default Home;

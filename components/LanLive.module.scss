@@ -1,0 +1,25 @@
+.lanLive {
+  width: 100%;
+  height: 938px;
+  background-color: rgb(255, 255, 255);
+  background: url('https://ddangkongschool.com/447b61faa9f2c83c464b4effe7cde86e.png');
+  background-position: center center;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.textWrapper {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
