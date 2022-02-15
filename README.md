@@ -15,39 +15,18 @@ https://hodoolabs.vercel.app/
 
 ### :clapper: 구현내용
 
-#### 1. 대화목록 데이터 모델 구성
+#### 1. 마크업과 반응형 공용 스타일 코드. 
+https://github.com/wanted-pre-onboarding-Team-13/hodoolabs/pull/1#issue-1137505332
+```
+- 웹페이지의 사이즈에 따라 특정 아이템이 보이거나 사라지도록 기능을 돕는 고용 스타일 작성하였습니다.
+- 마크업 진행시 화면에 나타내고 싶지 않지만 텍스트를 브라우저에게 전달해야 하는 케이스들을 다룰 수 있도록 하였습니다.
+```
+#### 2. Nav 스크롤 style 컨트롤.
+
+![nav바](https://user-images.githubusercontent.com/77766718/154122918-9d738590-b4cd-4ded-9d36-51ee51ad0740.gif)
 
 ```
-- 메시지의 데이터 모델에는 userId, userName, profileImage, content, date
-- typescript를 이용하여 각각 데이터 모델에 type을 지정해 주었습니다.
+- 웹페이지에 스크롤 동작을 감지하여 여부에 따라 nav의 배경색,폰트색,이미지 로고 색이 변하는 기능을 구현하였습니다.
 ```
-#### 2. 로그인 유저 관리
 
-```
-- redux를 이용하여, 로그인 유저 상태 관리
-- 현재 로그인된 유저, 채팅창에서 *표시
-```
-#### 3. 채팅 기능
-
-```
-- redux를 이용하여, 메시지 Post,Delete 기능 구현
-- shift + enter는 줄바꿈 , enter는 메시지 보내기 기능 구분
-- 입력창이 빈칸일시 메시지 보내기 기능 작동안함.
-- 답장 버튼 누를시, 회신 메시지 
-- 채팅 입력 컴포넌트 UI 구현
-- textarea 글자 입력 길이에 따라 textarea의 height 값이 변경되는 기능.
-- 텍스트 줄바꿈 또는 작성한 텍스트 수정할 때 textarea의 높이 값이 변경됩니다.
-```
-![채팅 기능](https://user-images.githubusercontent.com/77766718/153698875-9bcf2d93-435a-472c-882f-37c6df39ed77.gif)
-
-
-
-
-
-#### 4. nav바 및 side바 UI 구현
-
-```
-- nav바 및 aside바 전체 UI 구현
-- nav바에 로그인한 유저의 프로필 이미지가 표시됩니다.
-```
 
