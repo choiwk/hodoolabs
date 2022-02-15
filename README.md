@@ -1,7 +1,7 @@
 <h1 align= "center"> HodooLabs 메인페이지 구현 과제</h1>
 
 ### :house: 배포 URL
-http://swit-team13.s3-website.ap-northeast-2.amazonaws.com
+https://hodoolabs.vercel.app/
 ![캡쳐](https://user-images.githubusercontent.com/85682854/154102208-ef02b9a7-0053-44eb-8c55-d6687439cc2b.png)
 
 
