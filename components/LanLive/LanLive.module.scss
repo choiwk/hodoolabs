@@ -1,0 +1,150 @@
+$mobile-style: 'only screen and (max-width:768px)';
+$desktop-style: 'screen and (min-width: 769px)';
+@mixin font-color {
+  color: #333333;
+}
+
+.lanLive {
+  width: 100%;
+  height: 938px;
+  background-color: rgb(255, 255, 255);
+  background: url('https://ddangkongschool.com/447b61faa9f2c83c464b4effe7cde86e.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.textWrapper {
+  @include font-color();
+  top: 350px;
+  width: 286px;
+  height: 310px;
+  position: relative;
+  top: 350px;
+}
+.imgWrapper {
+  // width: 100%;
+  // height: 100%;
+  // width: 1118px;
+  // height: 880px;
+}
+
+.title {
+  white-space: pre-wrap;
+  font-size: 50px;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.video {
+  overflow: hidden;
+  top: 31px;
+  position: absolute;
+  right: -200px;
+}
+
+.img {
+  overflow: hidden;
+  width: 1118px;
+  height: 880px;
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+}
+
+.videoWrapper {
+  position: absolute;
+  width: 866px;
+  height: 650px;
+  right: 126px;
+  top: 113px;
+  border-radius: 15px;
+  object-fit: fill;
+}
+
+.videoPlayer {
+  width: 867px;
+  height: 651px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lanLive {
+    height: 1042px;
+  }
+  .contentWrapper {
+    max-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .textWrapper {
+    top: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .title {
+    width: 500px;
+    text-align: center;
+  }
+  .description {
+    width: 442px;
+    text-align: center;
+  }
+  .video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    right: 0;
+    // margin: 0 auto;
+  }
+
+  .imgWrapper {
+    width: 768px;
+    height: 662px;
+  }
+
+  .videoWrapper {
+    position: absolute;
+    width: 599px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 15px;
+    left: 86px;
+    overflow: hidden;
+    top: 75px;
+  }
+  .videoPlayer {
+    width: 600px;
+    height: 498px;
+    border-radius: 8px;
+  }
+}

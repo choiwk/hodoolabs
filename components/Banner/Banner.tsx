@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import styles from "./Compo.module.scss";
+import styles from "./Banner.module.scss";
 import Image from "next/image";
 import classNames from "classnames";
 
-export default function Compo() {
+export default function Banner() {
   const [position, setPosition] = useState(0);
   function onScroll() {
     setPosition(window.scrollY);
