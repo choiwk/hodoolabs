@@ -73,4 +73,12 @@ https://github.com/wanted-pre-onboarding-Team-13/hodoolabs/pull/1#issue-11375053
 - 웹페이지에 스크롤 동작을 감지하여 여부에 따라 nav의 배경색,폰트색,이미지 로고 색이 변하는 기능을 구현하였습니다.
 ```
 
+#### 3. 이용자 후기 레이아웃
+
+![slider](https://user-images.githubusercontent.com/77766718/154124480-80609f9f-ee9a-416d-98c1-cc3e404783b3.gif)
+
+```
+- 이용자의 정보, 리뷰 데이터를 받아와 UI에 출력하였습니다.
+- swiper을 적용해 autoplay 슬라이더를 구현하였습니다.
+```
 
