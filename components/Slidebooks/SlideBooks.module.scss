@@ -78,7 +78,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-238px * 30));
+      transform: translateX(calc(-238px * 15));
     }
   }
   height: 250px;
@@ -98,10 +98,10 @@
     }
   }
   display: flex;
-  width: calc(238px * 3);
+  width: calc(238px * 30);
   animation: slide 90s linear infinite;
   @media (min-width: 768px) {
-    animation: slide 50s linear infinite;
+    animation: slide 30s linear infinite;
   }
 }
 

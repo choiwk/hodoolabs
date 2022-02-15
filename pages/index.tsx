@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <Live />
       <Diary />
       <SlideBooks />
-      {/* <AppDownload /> */}
+      <AppDownload />
     </div>
   );
 };
