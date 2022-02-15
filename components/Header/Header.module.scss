@@ -1,7 +1,73 @@
 .headerContainer {
+  display: flex;
+  flex-direction: column;
   background-image: url('https://ddangkongschool.com/8358b32838f4b212cf113ad6c4ea9996.jpg');
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center center;
+
+  .headerSection {
+    display: flex;
+    max-width: 1140px;
+    margin: 230px auto;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .headerMessage {
+      .message {
+        span {
+          font-size: 60px;
+          line-height: 80px;
+          font-weight: bold;
+          color: #fff;
+        }
+        strong {
+          color: #fdc441;
+        }
+      }
+    }
+  }
+  .effectContainer {
+    margin: 150px auto 0;
+    color: #fff;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+  }
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-60px);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerContainer {
+    .headerSection {
+      margin: 500px 0 0;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerContainer {
+    .headerSection {
+      .headerMessage {
+        .message {
+          span {
+            font-size: 36px;
+            line-height: 1.33;
+            font-weight: bold;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
