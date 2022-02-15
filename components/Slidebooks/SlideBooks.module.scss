@@ -104,3 +104,18 @@
     animation: slide 50s linear infinite;
   }
 }
+
+.title,
+.text {
+  opacity: 0;
+  transition: all 0.8s;
+}
+.titleAnimation,
+.textAnimation {
+  top: 50px;
+  opacity: 1;
+  transform: translateY(-50px);
+}
+.textAnimation {
+  transition-delay: 0.3s;
+}

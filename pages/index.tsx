@@ -10,15 +10,14 @@ import Live from '../components/Live/Live';
 import Diary from '../components/Diary/Diary';
 import SlideBooks from '../components/Slidebooks/SlideBooks';
 
-
 const Home: NextPage = () => {
   return (
     <div>
       <Header></Header>
-      {/* <LanLive></LanLive>
+      <LanLive></LanLive>
       <BookChoice></BookChoice>
       <Live />
-      <Diary /> */}
+      <Diary />
       <SlideBooks />
       <AppDownload />
     </div>
