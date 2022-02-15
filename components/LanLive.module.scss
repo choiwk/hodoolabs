@@ -1,25 +1,95 @@
+@mixin font-color {
+  color: #333333;
+}
+
 .lanLive {
   width: 100%;
   height: 938px;
   background-color: rgb(255, 255, 255);
   background: url('https://ddangkongschool.com/447b61faa9f2c83c464b4effe7cde86e.png');
   background-position: center center;
-  overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
   margin: 0 auto;
+  position: relative;
 }
 
-.textWrapper {
+.contentWrapper {
+  // padding-left: 100px;
+  // padding-right: 30px;
+  width: 100%;
+  height: 100%;
   position: relative;
+  // align-items: center;
+  // justify-content: center;
   max-width: 1200px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  // display: flex;
+}
+
+.test {
+  top: 350px;
+  width: 286px;
+  height: 310px;
+}
+.textWrapper {
+  @include font-color();
+  // position: absolute;
+  position: relative;
+  // margin-right: 20px;
+  top: 350px;
+  // width: 286px;
+  // height: 310px;
+}
+
+.title {
+  white-space: pre-wrap;
+  font-size: 50px;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.video {
+  overflow: hidden;
+  top: 31px;
+  width: 1118px;
+  height: 800px;
+  position: absolute;
+  // position: relative;
+  right: -200px;
+}
+
+.img {
+  overflow: hidden;
+  width: 1118px;
+  height: 880px;
+  image-rendering: -webkit-optimize-contrast;
+  backface-visibility: hidden;
+}
+
+.videoWrapper {
+  position: absolute;
+  width: 866px;
+  height: 650px;
+  right: 126px;
+  top: 113px;
+  border-radius: 15px;
+  object-fit: fill;
+}
+
+.videoPlayer {
+  width: 867px;
+  height: 651px;
+  border-radius: 15px;
 }

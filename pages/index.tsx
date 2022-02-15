@@ -2,11 +2,13 @@ import React from 'react';
 import type { NextPage } from 'next';
 
 import LanLive from '../components/LanLive';
+import BookChoice from '../components/BookChoice';
 
 const Home: NextPage = () => {
   return (
     <div>
-      안녕<LanLive></LanLive>
+      <LanLive></LanLive>
+      <BookChoice></BookChoice>
     </div>
   );
 };
