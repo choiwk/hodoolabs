@@ -2,9 +2,9 @@
 
 ### :house: 배포 URL
 http://swit-team13.s3-website.ap-northeast-2.amazonaws.com
-![캡쳐](https://user-images.githubusercontent.com/85682854/153686261-fc3e9267-b3e6-4183-807f-18e5dc3e0944.png)
+![캡쳐](https://user-images.githubusercontent.com/85682854/154102208-ef02b9a7-0053-44eb-8c55-d6687439cc2b.png)
 
-<br/>
+
 
 ### :exclamation: 설치방법
 
