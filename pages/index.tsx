@@ -9,7 +9,6 @@ import AppDownload from '../components/Appdownload/AppDownload';
 import Live from '../components/Live/Live';
 import Diary from '../components/Diary/Diary';
 
-
 const Home: NextPage = () => {
   return (
     <div>
@@ -18,7 +17,7 @@ const Home: NextPage = () => {
       <BookChoice></BookChoice>
       <Live />
       <Diary />
-      <AppDownload />
+      {/* <AppDownload /> */}
     </div>
   );
 };
