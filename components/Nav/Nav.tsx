@@ -1,9 +1,10 @@
-import React, { useState, useLayoutEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../Nav/Nav.module.scss';
 import global from '../../styles/base/nomalize.module.scss';
 import classNames from 'classnames';
+
 import { CgShoppingCart } from 'react-icons/cg';
 import { BsList } from 'react-icons/bs';
 
@@ -28,7 +29,7 @@ function Nav() {
 
   const [imgColor, setImageColor] = useState<string>(logoSrc[0]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     document.addEventListener('scroll', () => {
       const backgroundcolor = window.scrollY < 90 ? 'transparent' : 'white';
 
