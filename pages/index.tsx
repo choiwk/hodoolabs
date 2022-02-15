@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Live />
       <Diary />
       <SlideBooks />
-      {/* <AppDownload /> */}
+      <AppDownload />
       <Footer />
     </div>
   );
