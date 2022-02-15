@@ -1,3 +1,5 @@
+$mobile-style: 'only screen and (max-width:768px)';
+$desktop-style: 'screen and (min-width: 769px)';
 @mixin font-color {
   color: #333333;
 }
@@ -17,17 +19,11 @@
 }
 
 .contentWrapper {
-  // padding-left: 100px;
-  // padding-right: 30px;
   width: 100%;
   height: 100%;
   position: relative;
-  // align-items: center;
-  // justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-
-  // display: flex;
 }
 
 .test {
@@ -37,12 +33,10 @@
 }
 .textWrapper {
   @include font-color();
-  // position: absolute;
+
   position: relative;
-  // margin-right: 20px;
+
   top: 350px;
-  // width: 286px;
-  // height: 310px;
 }
 
 .title {
@@ -92,4 +86,7 @@
   width: 867px;
   height: 651px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
 }
