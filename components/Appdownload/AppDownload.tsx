@@ -26,7 +26,7 @@ function AppDownload() {
       <div className={styles.contentContainer}>
         <div>
           <div className={styles.contentTitleWrapper}>
-            <div className={classNames({ [styles.title]: true, [scrollPosition > 5400 ? styles.titleAnimation : styles.title]: true })}>
+            <div className={classNames({ [styles.title]: true, [scrollPosition > 6450 ? styles.titleAnimation : styles.title]: true })}>
               <div className={styles.contentTitle}>지금 다운로드 받으세요!</div>
             </div>
           </div>

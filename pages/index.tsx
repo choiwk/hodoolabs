@@ -11,6 +11,7 @@ import Diary from '../components/Diary/Diary';
 import SlideBooks from '../components/Slidebooks/SlideBooks';
 import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
+import Review from '../components/ReviewSlider/Review';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <Live />
       <Diary />
       <SlideBooks />
+      <Review />
       <AppDownload />
       <Footer />
     </div>

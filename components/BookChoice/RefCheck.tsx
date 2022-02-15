@@ -23,8 +23,6 @@ function RefCheck({ check, isVisible, delay }: Props) {
   };
 
   useEffect(() => {
-    console.log('render');
-
     let observer: IntersectionObserver;
     if (visibleRef.current) {
       observer = new IntersectionObserver(onIntersect, { threshold: 0.5 });

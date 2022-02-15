@@ -14,13 +14,13 @@ function SlideBooks() {
   return (
     <div className={styles.container}>
       <div className={styles.textWrap}>
-        <div className={classNames({ [styles.title]: true, [scrollPosition > 4500 ? styles.titleAnimation : styles.title]: true })}>
+        <div className={classNames({ [styles.title]: true, [scrollPosition > 4800 ? styles.titleAnimation : styles.title]: true })}>
           <div className={styles.firstText}>
             입학 전 1000권 읽기!
             <br /> 땅콩스쿨로 도전해보세요.
           </div>
         </div>
-        <div className={classNames({ [styles.text]: true, [scrollPosition > 4500 ? styles.textAnimation : styles.text]: true })}>
+        <div className={classNames({ [styles.text]: true, [scrollPosition > 4800 ? styles.textAnimation : styles.text]: true })}>
           <div className={styles.secondText}>
             매달 새로운 32권의 어린이 베스트 셀러를 만날 수 있어요.
             <br />
