@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import downloadticket from '../../assets/downloadticket.png';
 import downloadticketvertical from '../../assets/downloadticketverical.png';
