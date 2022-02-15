@@ -1,12 +1,14 @@
-import React from 'react';
-import type { NextPage } from 'next';
+import React from "react";
+import type { NextPage } from "next";
 
-import LanLive from '../components/LanLive';
+import LanLive from "../components/LanLive";
+import Compo from "../components/Compo";
 
 const Home: NextPage = () => {
   return (
     <div>
-      안녕<LanLive></LanLive>
+      <LanLive></LanLive>
+      <Compo />
     </div>
   );
 };
