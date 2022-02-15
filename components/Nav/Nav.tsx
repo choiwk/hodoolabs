@@ -1,45 +1,45 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from '../Nav/Nav.module.scss';
-import global from '../../styles/base/nomalize.module.scss';
-import classNames from 'classnames';
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../Nav/Nav.module.scss";
+import global from "../../styles/base/nomalize.module.scss";
+import classNames from "classnames";
 
-import { CgShoppingCart } from 'react-icons/cg';
-import { BsList } from 'react-icons/bs';
+import { CgShoppingCart } from "react-icons/cg";
+import { BsList } from "react-icons/bs";
 
 function Nav() {
   const tagList = [
-    '도서구매',
-    '장바구니',
-    '|',
-    '이용권 관리',
-    '로그인/회원가입',
+    "도서구매",
+    "장바구니",
+    "|",
+    "이용권 관리",
+    "로그인/회원가입",
   ];
 
   const logoSrc = [
-    'https://ddangkongschool.com/99fc850a76600cb2d4c58074a018c441.png',
-    'https://ddangkongschool.com/b172e73e98d5343a915da6ce9ac4baff.png',
+    "https://ddangkongschool.com/99fc850a76600cb2d4c58074a018c441.png",
+    "https://ddangkongschool.com/b172e73e98d5343a915da6ce9ac4baff.png",
   ];
 
-  const [backgroundColor, setBackgroundColor] = useState<string>('');
-  const [fontColor, setFontColor] = useState<string>('');
+  const [backgroundColor, setBackgroundColor] = useState<string>("");
+  const [fontColor, setFontColor] = useState<string>("");
 
   const scrollRef = useRef<HTMLElement | null>(null);
 
   const [imgColor, setImageColor] = useState<string>(logoSrc[0]);
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {
-      const backgroundcolor = window.scrollY < 90 ? 'transparent' : 'white';
+    document.addEventListener("scroll", () => {
+      const backgroundcolor = window.scrollY < 90 ? "transparent" : "white";
 
-      if (backgroundcolor === 'white') {
+      if (backgroundcolor === "white") {
         setBackgroundColor(backgroundcolor);
-        setFontColor('black');
+        setFontColor("black");
         setImageColor(logoSrc[1]);
       } else {
         setBackgroundColor(backgroundcolor);
-        setFontColor('white');
+        setFontColor("white");
         setImageColor(logoSrc[0]);
       }
     });
@@ -58,7 +58,7 @@ function Nav() {
               <figure style={{ color: fontColor }}>
                 <Image
                   src={imgColor}
-                  alt="이미지 로고"
+                  alt='이미지 로고'
                   height={50}
                   width={154}
                 />
@@ -94,7 +94,7 @@ function Nav() {
                   })}
                   key={index}
                 >
-                  <Link href={'##'}>
+                  <Link href={"##"}>
                     <a style={{ color: fontColor }}>{el}</a>
                   </Link>
                 </li>

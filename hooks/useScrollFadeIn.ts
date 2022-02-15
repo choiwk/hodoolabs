@@ -29,8 +29,8 @@ const useScrollFadeIn = (direction: string, duration: number, delay: number) => 
         current.style.transform = 'translate3d(0, 0px, 0)';
         current.style.transitionDelay = `${delay}ms`;
       } else if (current && !entry.isIntersecting) {
-        current.style.transitionProperty = 'none';
-        current.style.transitionDuration = 'none';
+        current.style.transitionProperty = 'all';
+        current.style.transitionDuration = '100ms';
         current.style.transitionTimingFunction = 'none';
         current.style.opacity = '0';
         current.style.transform = 'translate3d(0, -40px, 0)';
@@ -43,7 +43,7 @@ const useScrollFadeIn = (direction: string, duration: number, delay: number) => 
     let observer: IntersectionObserver;
 
     if (element.current) {
-      observer = new IntersectionObserver(onScroll, { threshold: 0.7 });
+      observer = new IntersectionObserver(onScroll, { threshold: 0.1 });
 
       observer.observe(element.current);
     }
