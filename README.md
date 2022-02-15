@@ -82,3 +82,15 @@ https://github.com/wanted-pre-onboarding-Team-13/hodoolabs/pull/1#issue-11375053
 - swiper을 적용해 autoplay 슬라이더를 구현하였습니다.
 ```
 
+#### 4. 독서 일기 및 실시간 방송 섹션 구현
+
+```
+- 독서일기 섹션 및 실시간 방송 섹션의 UI를 구현하였습니다.
+- 위에서 아래 스크롤시 텍스트 애니메이션 효과를 구현하였습니다.
+```
+
+#### 5. Footer 영역 구현
+
+```
+- Footer 영역 UI 구현
+```
