@@ -2,11 +2,13 @@ import React from 'react';
 import type { NextPage } from 'next';
 
 import Header from '../components/Header/Header';
-import LanLive from '../components/LanLive';
-import BookChoice from '../components/BookChoice';
+
+import LanLive from '../components/LanLive/LanLive';
+import BookChoice from '../components/BookChoice/BookChoice';
 import AppDownload from '../components/Appdownload/AppDownload';
 import Live from '../components/Live/Live';
 import Diary from '../components/Diary/Diary';
+
 
 const Home: NextPage = () => {
   return (
