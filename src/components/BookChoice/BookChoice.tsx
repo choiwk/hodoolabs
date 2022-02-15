@@ -1,6 +1,6 @@
 import Book from './Book';
 import styles from './BookChoice.module.scss';
-import useScrollFadeIn from '../../hooks/useScrollFadeIn';
+import useScrollFadeIn from '../../../hooks/useScrollFadeIn';
 import check1 from '../../assets/check1.gif';
 import check2 from '../../assets/check2.gif';
 import check3 from '../../assets/check3.gif';

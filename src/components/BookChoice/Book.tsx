@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import styles from './BookChoice.module.scss';
-import useScrollFadeIn from '../../hooks/useScrollFadeIn';
+import useScrollFadeIn from '../../../hooks/useScrollFadeIn';
 import RefCheck from './RefCheck';
 interface Props {
   img: string;

@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import Image from 'next/image';
-import useScrollFadeIn from '../../hooks/useScrollFadeIn';
+import useScrollFadeIn from '../../../hooks/useScrollFadeIn';
 import styles from './LanLive.module.scss';
 function LanLive() {
   const prameSrc = 'https://ddangkongschool.com/026a4055ef859613770f9a31630df190.png';

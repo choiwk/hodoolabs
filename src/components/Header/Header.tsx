@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../Header/Header.module.scss';
-import useScrollFadeIn from '../../hooks/useScrollFadeIn';
+import useScrollFadeIn from '../../../hooks/useScrollFadeIn';
 import Image from 'next/image';
 import Nav from '../Nav/Nav';
 import global from '../../styles/base/nomalize.module.scss';
