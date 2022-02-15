@@ -5,6 +5,8 @@ import Header from '../components/Header/Header';
 import LanLive from '../components/LanLive';
 import BookChoice from '../components/BookChoice';
 import AppDownload from '../components/Appdownload/AppDownload';
+import Live from '../components/Live/Live';
+import Diary from '../components/Diary/Diary';
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +14,8 @@ const Home: NextPage = () => {
       <Header></Header>
       <LanLive></LanLive>
       <BookChoice></BookChoice>
+      <Live />
+      <Diary />
       <AppDownload />
     </div>
   );
