@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../Header/Header.module.scss';
-
+import useScrollFadeIn from '../../hooks/useScrollFadeIn';
 import Image from 'next/image';
 import Nav from '../Nav/Nav';
 import global from '../../styles/base/nomalize.module.scss';
@@ -12,15 +12,24 @@ function Header() {
       <header className={styles.headerContainer}>
         <section className={styles.headerSection}>
           <div className={styles.headerMessage}>
-            <div className={styles.message}>
+            <div
+              {...useScrollFadeIn('down', 1500, 1)}
+              className={styles.message}
+            >
               <span>책 읽는 재미,</span>
             </div>
-            <div className={styles.message}>
+            <div
+              {...useScrollFadeIn('down', 1500, 1)}
+              className={styles.message}
+            >
               <span>
                 <strong>땅콩스쿨</strong>이
               </span>
             </div>
-            <div className={styles.message}>
+            <div
+              {...useScrollFadeIn('down', 1500, 1)}
+              className={styles.message}
+            >
               <span>만들어줄게요!</span>
             </div>
           </div>
