@@ -4,7 +4,48 @@
 https://hodoolabs.vercel.app/
 ![캡쳐](https://user-images.githubusercontent.com/85682854/154102208-ef02b9a7-0053-44eb-8c55-d6687439cc2b.png)
 
+<br/>
 
+### 🏗 프로젝트 구조도
+
+```html
+├── Appdownload
+│   ├── AppDownload.tsx
+│   └── Appdownload.module.scss
+├── Banner
+│   ├── Banner.module.scss
+│   └── Banner.tsx
+├── BookChoice
+│   ├── Book.tsx
+│   ├── BookChoice.module.scss
+│   ├── BookChoice.tsx
+│   └── RefCheck.tsx
+├── Diary
+│   ├── Diary.module.scss
+│   └── Diary.tsx
+├── Footer
+│   ├── Footer.module.scss
+│   └── Footer.tsx
+├── Header
+│   ├── Header.module.scss
+│   └── Header.tsx
+├── LanLive
+│   ├── LanLive.module.scss
+│   └── LanLive.tsx
+├── Live
+│   ├── Live.module.scss
+│   └── Live.tsx
+├── Nav
+│   ├── Nav.module.scss
+│   └── Nav.tsx
+├── ReviewSlider
+│   ├── Review.module.scss
+│   └── Review.tsx
+└── Slidebooks
+    ├── ImageWrap.tsx
+    ├── SlideBooks.module.scss
+    └── SlideBooks.tsx
+```
 
 ### :exclamation: 설치방법
 
