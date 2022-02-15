@@ -26,7 +26,7 @@ function Diary() {
         </div>
       </div>
       <div className={styles.imgWrapper}>
-        <img src='/images/diaryimg.png' alt='reading' className={styles.diaryImg} />
+        <img src='/images/diaryImg.png' alt='reading' className={styles.diaryImg} />
       </div>
     </div>
   );

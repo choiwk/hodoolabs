@@ -28,7 +28,7 @@ function Live() {
         </div>
       </div>
       <div className={styles.imgWrapper}>
-        <img src='/images/liveimg.png' alt='reading' className={styles.liveImg} />
+        <img src='/images/liveImg.png' alt='reading' className={styles.liveImg} />
       </div>
     </div>
   );
