@@ -141,7 +141,7 @@ html {
 
 body {
   min-width: 320px;
-  font-family: 'Noto Sans KR', 'sans-serif';
+  font-family: "Noto Sans KR", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-black);
@@ -149,12 +149,12 @@ body {
   height: 100%;
 }
 
-input[type='email'],
-input[type='text'],
+input[type="email"],
+input[type="text"],
 button,
 span,
 textarea {
-  font-family: 'Noto Sans KR', 'sans-serif';
+  font-family: "Noto Sans KR", "sans-serif";
   color: var(--color-black);
 }
 
@@ -163,5 +163,5 @@ button {
   border: none;
 }
 
-$mobile-style: 'only screen and (max-width:768px)';
-$desktop-style: 'screen and (min-width: 769px)';
+$mobile-style: "only screen and (max-width:768px)";
+$desktop-style: "screen and (min-width: 769px)";

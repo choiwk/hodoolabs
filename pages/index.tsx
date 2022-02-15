@@ -1,7 +1,8 @@
-import React from 'react';
-import type { NextPage } from 'next';
+import React from "react";
+import type { NextPage } from "next";
 
-import Header from '../components/Header/Header';
+import Header from "../components/Header/Header";
+
 
 import LanLive from '../components/LanLive/LanLive';
 import BookChoice from '../components/BookChoice/BookChoice';
@@ -11,10 +12,12 @@ import Diary from '../components/Diary/Diary';
 import SlideBooks from '../components/Slidebooks/SlideBooks';
 import Footer from '../components/Footer/Footer';
 
+
 const Home: NextPage = () => {
   return (
     <div>
       <Header></Header>
+      <Banner />
       <LanLive></LanLive>
       <BookChoice></BookChoice>
       <Live />
