@@ -3,33 +3,76 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 30px;
   width: 100%;
   background-color: transparent;
-  .nav_container {
+  transition: all 0.5s ease-in-out;
+  .navContainer {
     width: 100%;
     display: flex;
     max-width: 1140px;
     justify-content: space-between;
     align-items: center;
     height: 90px;
-    .gnb_left {
+    .gnbLeft {
       display: flex;
     }
-    .gnb_right {
+    .gnbRight {
       .navList {
         display: flex;
         align-items: center;
+
+        .itemList {
+          margin-right: 20px;
+          cursor: pointer;
+          :last-child {
+            margin-right: 0;
+          }
+          .itemIcon {
+            font-size: 2rem;
+            color: #fff;
+          }
+        }
+
         .navListItem {
           margin-right: 50px;
           a {
-            font-size: 17px;
+            font-size: 16px;
             color: #fff;
+          }
+          :last-child {
+            margin-right: 0;
           }
         }
         strong {
           margin-right: 50px;
           font-size: 20px;
           color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 0 20px;
+    height: 60px;
+    .navContainer {
+      .title {
+        width: 110px;
+        height: 36px;
+      }
+      .gnbRight {
+        .navList {
+          .itemList {
+            :last-child {
+              margin-right: 0;
+            }
+            .itemIcon {
+              font-size: 1.8rem;
+            }
+          }
         }
       }
     }
