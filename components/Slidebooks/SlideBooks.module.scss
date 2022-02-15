@@ -60,10 +60,10 @@
   margin-bottom: 150px;
   margin-top: 100px;
   text-align: center;
-  overflow: hidden;
 }
 
 .slideWrap {
+  overflow: auto;
   height: 135px;
   width: 100%;
   text-align: left;
@@ -99,6 +99,7 @@
   }
   display: flex;
   width: calc(238px * 30);
+  width: 100%;
   animation: slide 90s linear infinite;
   @media (min-width: 768px) {
     animation: slide 30s linear infinite;
