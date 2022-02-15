@@ -275,3 +275,13 @@
     line-height: 1;
   }
 }
+
+.title {
+  opacity: 0;
+  transition: all 0.8s;
+}
+.titleAnimation {
+  top: 50px;
+  opacity: 1;
+  transform: translateY(-50px);
+}

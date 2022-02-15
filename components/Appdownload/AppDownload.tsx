@@ -1,35 +1,39 @@
 import { useMediaQuery } from 'react-responsive';
+import { useEffect, useState } from 'react';
+import classNames from 'classnames';
 import Image from 'next/image';
 import downloadticket from '../../assets/downloadticket.png';
 import downloadticketvertical from '../../assets/downloadticketverical.png';
 import logo from '../../assets/logo.png';
 import styles from './Appdownload.module.scss';
-import { useEffect, useState } from 'react';
 
 function AppDownload() {
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
   const [isMobile, setIsMobile] = useState(false);
   const mobile = useMediaQuery({ query: '(max-width: 767px)' });
   useEffect(() => {
     if (mobile) setIsMobile(mobile);
   }, [mobile]);
 
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', updateScroll);
+  });
   return (
     <div className={styles.appDownloadContainer}>
       <div className={styles.contentContainer}>
         <div>
           <div className={styles.contentTitleWrapper}>
-            <div>
+            <div className={classNames({ [styles.title]: true, [scrollPosition > 5400 ? styles.titleAnimation : styles.title]: true })}>
               <div className={styles.contentTitle}>지금 다운로드 받으세요!</div>
             </div>
           </div>
         </div>
         <div className={styles.downloadContainer}>
           <div className={styles.ticketImg}>
-            {mobile ? (
-              <Image src={downloadticketvertical} alt='download-ticket-vertical' layout='fill' width={360} height={613} />
-            ) : (
-              <Image src={downloadticket} alt='download-ticket' layout='fill' width={1240} height={534} />
-            )}
+            {mobile ? <Image src={downloadticketvertical} alt='download-ticket-vertical' layout='fill' width={360} height={613} /> : <Image src={downloadticket} alt='download-ticket' layout='fill' />}
           </div>
           <div className={styles.leftTicketBox}>
             <div>

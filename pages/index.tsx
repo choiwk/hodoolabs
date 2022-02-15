@@ -3,13 +3,15 @@ import type { NextPage } from "next";
 
 import Header from "../components/Header/Header";
 
-import LanLive from "../components/LanLive/LanLive";
-import BookChoice from "../components/BookChoice/BookChoice";
-import AppDownload from "../components/Appdownload/AppDownload";
-import Live from "../components/Live/Live";
-import Diary from "../components/Diary/Diary";
-import SlideBooks from "../components/Slidebooks/SlideBooks";
-import Banner from "../components/Banner/Banner";
+
+import LanLive from '../components/LanLive/LanLive';
+import BookChoice from '../components/BookChoice/BookChoice';
+import AppDownload from '../components/Appdownload/AppDownload';
+import Live from '../components/Live/Live';
+import Diary from '../components/Diary/Diary';
+import SlideBooks from '../components/Slidebooks/SlideBooks';
+import Footer from '../components/Footer/Footer';
+
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +23,8 @@ const Home: NextPage = () => {
       <Live />
       <Diary />
       <SlideBooks />
-      {/* <AppDownload /> */}
+      <AppDownload />
+      <Footer />
     </div>
   );
 };
