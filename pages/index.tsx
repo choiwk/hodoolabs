@@ -8,6 +8,7 @@ import BookChoice from '../components/BookChoice/BookChoice';
 import AppDownload from '../components/Appdownload/AppDownload';
 import Live from '../components/Live/Live';
 import Diary from '../components/Diary/Diary';
+import SlideBooks from '../components/Slidebooks/SlideBooks';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <BookChoice></BookChoice>
       <Live />
       <Diary />
+      <SlideBooks />
       {/* <AppDownload /> */}
     </div>
   );
