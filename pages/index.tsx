@@ -9,6 +9,7 @@ import AppDownload from '../components/Appdownload/AppDownload';
 import Live from '../components/Live/Live';
 import Diary from '../components/Diary/Diary';
 import SlideBooks from '../components/Slidebooks/SlideBooks';
+import Footer from '../components/Footer/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Diary />
       <SlideBooks />
       <AppDownload />
+      <Footer />
     </div>
   );
 };
